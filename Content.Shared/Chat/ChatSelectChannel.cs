@@ -7,7 +7,7 @@
     ///     Maps to <see cref="ChatChannel"/>, giving better names.
     /// </remarks>
     [Flags]
-    public enum ChatSelectChannel : ushort
+    public enum ChatSelectChannel : uint
     {
         None = 0,
 
@@ -30,6 +30,11 @@
         ///     Local out-of-character channel
         /// </summary>
         LOOC = ChatChannel.LOOC,
+
+        /// <summary>
+        ///     Local out-of-character channel
+        /// </summary>
+        SubtleLOOC = ChatChannel.SubtleLOOC,
 
         /// <summary>
         ///     Out-of-character channel
